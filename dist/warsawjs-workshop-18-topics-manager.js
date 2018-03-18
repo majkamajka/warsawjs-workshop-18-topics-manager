@@ -163,7 +163,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 	return to;
 };
 
-},{}],23:[function(require,module,exports) {
+},{}],25:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -181,7 +181,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = emptyObject;
-},{}],24:[function(require,module,exports) {
+},{}],26:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -218,7 +218,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-},{}],16:[function(require,module,exports) {
+},{}],15:[function(require,module,exports) {
 /** @license React v16.2.0
  * react.production.min.js
  *
@@ -241,7 +241,7 @@ var U={Children:{map:function(a,b,e){if(null==a)return a;var c=[];T(a,c,null,b,e
 d=a.key,g=a.ref,k=a._owner;if(null!=b){void 0!==b.ref&&(g=b.ref,k=G.current);void 0!==b.key&&(d=""+b.key);if(a.type&&a.type.defaultProps)var f=a.type.defaultProps;for(h in b)H.call(b,h)&&!I.hasOwnProperty(h)&&(c[h]=void 0===b[h]&&void 0!==f?f[h]:b[h])}var h=arguments.length-2;if(1===h)c.children=e;else if(1<h){f=Array(h);for(var l=0;l<h;l++)f[l]=arguments[l+2];c.children=f}return{$$typeof:r,type:a.type,key:d,ref:g,props:c,_owner:k}},createFactory:function(a){var b=J.bind(null,a);b.type=a;return b},
 isValidElement:K,version:"16.2.0",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{ReactCurrentOwner:G,assign:m}},V=Object.freeze({default:U}),W=V&&U||V;module.exports=W["default"]?W["default"]:W;
 
-},{"object-assign":22,"fbjs/lib/emptyObject":23,"fbjs/lib/emptyFunction":24}],26:[function(require,module,exports) {
+},{"object-assign":22,"fbjs/lib/emptyObject":25,"fbjs/lib/emptyFunction":26}],33:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -295,7 +295,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-},{}],27:[function(require,module,exports) {
+},{}],34:[function(require,module,exports) {
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
  *
@@ -358,7 +358,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = warning;
-},{"./emptyFunction":24}],28:[function(require,module,exports) {
+},{"./emptyFunction":26}],24:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -372,7 +372,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
-},{}],25:[function(require,module,exports) {
+},{}],23:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -432,7 +432,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 }
 
 module.exports = checkPropTypes;
-},{"fbjs/lib/invariant":26,"fbjs/lib/warning":27,"./lib/ReactPropTypesSecret":28}],17:[function(require,module,exports) {
+},{"fbjs/lib/invariant":33,"fbjs/lib/warning":34,"./lib/ReactPropTypesSecret":24}],16:[function(require,module,exports) {
 /** @license React v16.2.0
  * react.development.js
  *
@@ -1784,7 +1784,7 @@ if ('development' !== "production") {
     module.exports = react;
   })();
 }
-},{"object-assign":22,"fbjs/lib/emptyObject":23,"fbjs/lib/invariant":26,"fbjs/lib/warning":27,"fbjs/lib/emptyFunction":24,"prop-types/checkPropTypes":25}],7:[function(require,module,exports) {
+},{"object-assign":22,"fbjs/lib/emptyObject":25,"fbjs/lib/invariant":33,"fbjs/lib/warning":34,"fbjs/lib/emptyFunction":26,"prop-types/checkPropTypes":23}],11:[function(require,module,exports) {
 'use strict';
 
 if ('development' === 'production') {
@@ -1792,7 +1792,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.production.min.js":16,"./cjs/react.development.js":17}],29:[function(require,module,exports) {
+},{"./cjs/react.production.min.js":15,"./cjs/react.development.js":16}],30:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -1826,7 +1826,7 @@ var ExecutionEnvironment = {
 };
 
 module.exports = ExecutionEnvironment;
-},{}],31:[function(require,module,exports) {
+},{}],27:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -1901,7 +1901,7 @@ var EventListener = {
 };
 
 module.exports = EventListener;
-},{"./emptyFunction":24}],32:[function(require,module,exports) {
+},{"./emptyFunction":26}],28:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -1938,7 +1938,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 }
 
 module.exports = getActiveElement;
-},{}],34:[function(require,module,exports) {
+},{}],29:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2004,7 +2004,7 @@ function shallowEqual(objA, objB) {
 }
 
 module.exports = shallowEqual;
-},{}],36:[function(require,module,exports) {
+},{}],40:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2027,7 +2027,7 @@ function isNode(object) {
 }
 
 module.exports = isNode;
-},{}],35:[function(require,module,exports) {
+},{}],37:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2050,7 +2050,7 @@ function isTextNode(object) {
 }
 
 module.exports = isTextNode;
-},{"./isNode":36}],30:[function(require,module,exports) {
+},{"./isNode":40}],32:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2088,7 +2088,7 @@ function containsNode(outerNode, innerNode) {
 }
 
 module.exports = containsNode;
-},{"./isTextNode":35}],33:[function(require,module,exports) {
+},{"./isTextNode":37}],31:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2113,7 +2113,7 @@ function focusNode(node) {
 }
 
 module.exports = focusNode;
-},{}],14:[function(require,module,exports) {
+},{}],13:[function(require,module,exports) {
 /** @license React v16.2.0
  * react-dom.production.min.js
  *
@@ -2344,7 +2344,7 @@ var Sg={createPortal:Qg,findDOMNode:function(a){if(null==a)return null;if(1===a.
 E("40");return a._reactRootContainer?(Z.unbatchedUpdates(function(){Pg(null,null,a,!1,function(){a._reactRootContainer=null})}),!0):!1},unstable_createPortal:Qg,unstable_batchedUpdates:tc,unstable_deferredUpdates:Z.deferredUpdates,flushSync:Z.flushSync,__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{EventPluginHub:mb,EventPluginRegistry:Va,EventPropagators:Cb,ReactControlledComponent:qc,ReactDOMComponentTree:sb,ReactDOMEventListener:xd}};
 Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",rendererPackageName:"react-dom"});var Tg=Object.freeze({default:Sg}),Ug=Tg&&Sg||Tg;module.exports=Ug["default"]?Ug["default"]:Ug;
 
-},{"react":7,"fbjs/lib/ExecutionEnvironment":29,"object-assign":22,"fbjs/lib/emptyFunction":24,"fbjs/lib/EventListener":31,"fbjs/lib/getActiveElement":32,"fbjs/lib/shallowEqual":34,"fbjs/lib/containsNode":30,"fbjs/lib/focusNode":33,"fbjs/lib/emptyObject":23}],39:[function(require,module,exports) {
+},{"react":11,"fbjs/lib/ExecutionEnvironment":30,"object-assign":22,"fbjs/lib/emptyFunction":26,"fbjs/lib/EventListener":27,"fbjs/lib/getActiveElement":28,"fbjs/lib/shallowEqual":29,"fbjs/lib/containsNode":32,"fbjs/lib/focusNode":31,"fbjs/lib/emptyObject":25}],39:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2375,7 +2375,7 @@ function hyphenate(string) {
 }
 
 module.exports = hyphenate;
-},{}],38:[function(require,module,exports) {
+},{}],36:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2412,7 +2412,7 @@ function hyphenateStyleName(string) {
 }
 
 module.exports = hyphenateStyleName;
-},{"./hyphenate":39}],40:[function(require,module,exports) {
+},{"./hyphenate":39}],38:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -2442,7 +2442,7 @@ function camelize(string) {
 }
 
 module.exports = camelize;
-},{}],37:[function(require,module,exports) {
+},{}],35:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2480,7 +2480,7 @@ function camelizeStyleName(string) {
 }
 
 module.exports = camelizeStyleName;
-},{"./camelize":40}],15:[function(require,module,exports) {
+},{"./camelize":38}],14:[function(require,module,exports) {
 /** @license React v16.2.0
  * react-dom.development.js
  *
@@ -17838,7 +17838,7 @@ if ('development' !== "production") {
     module.exports = reactDom;
   })();
 }
-},{"react":7,"fbjs/lib/invariant":26,"fbjs/lib/warning":27,"fbjs/lib/ExecutionEnvironment":29,"object-assign":22,"fbjs/lib/emptyFunction":24,"fbjs/lib/EventListener":31,"fbjs/lib/getActiveElement":32,"fbjs/lib/shallowEqual":34,"fbjs/lib/containsNode":30,"fbjs/lib/focusNode":33,"fbjs/lib/emptyObject":23,"prop-types/checkPropTypes":25,"fbjs/lib/hyphenateStyleName":38,"fbjs/lib/camelizeStyleName":37}],6:[function(require,module,exports) {
+},{"react":11,"fbjs/lib/invariant":33,"fbjs/lib/warning":34,"fbjs/lib/ExecutionEnvironment":30,"object-assign":22,"fbjs/lib/emptyFunction":26,"fbjs/lib/EventListener":27,"fbjs/lib/getActiveElement":28,"fbjs/lib/shallowEqual":29,"fbjs/lib/containsNode":32,"fbjs/lib/focusNode":31,"fbjs/lib/emptyObject":25,"prop-types/checkPropTypes":23,"fbjs/lib/hyphenateStyleName":36,"fbjs/lib/camelizeStyleName":35}],10:[function(require,module,exports) {
 'use strict';
 
 function checkDCE() {
@@ -17874,7 +17874,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.production.min.js":14,"./cjs/react-dom.development.js":15}],20:[function(require,module,exports) {
+},{"./cjs/react-dom.production.min.js":13,"./cjs/react-dom.development.js":14}],17:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -17913,7 +17913,7 @@ var Login = function (_React$Component) {
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 10
+            lineNumber: 8
           },
           __self: this
         },
@@ -17922,7 +17922,7 @@ var Login = function (_React$Component) {
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 12
+              lineNumber: 10
             },
             __self: this
           },
@@ -17930,21 +17930,11 @@ var Login = function (_React$Component) {
             "button",
             { onClick: this.props.login, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 13
+                lineNumber: 11
               },
               __self: this
             },
             "Login"
-          ),
-          _react2.default.createElement(
-            "button",
-            { onClick: this.props.logout, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 14
-              },
-              __self: this
-            },
-            "Logout"
           )
         ),
         this.props.loggedIn && _react2.default.createElement(
@@ -17952,7 +17942,7 @@ var Login = function (_React$Component) {
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 18
+              lineNumber: 15
             },
             __self: this
           },
@@ -17960,31 +17950,27 @@ var Login = function (_React$Component) {
             "span",
             { className: "name", __source: {
                 fileName: _jsxFileName,
-                lineNumber: 19
+                lineNumber: 16
               },
               __self: this
             },
-            "user name"
+            this.props.name
           ),
-          _react2.default.createElement(
-            "span",
-            { className: "img", __source: {
-                fileName: _jsxFileName,
-                lineNumber: 20
-              },
-              __self: this
+          _react2.default.createElement("img", { className: "avatar", src: this.props.avatar, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 17
             },
-            "img"
-          ),
+            __self: this
+          }),
           _react2.default.createElement(
             "button",
-            { onClick: this.handleLogin, __source: {
+            { onClick: this.props.logout, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 21
+                lineNumber: 18
               },
               __self: this
             },
-            "Login"
+            "Log out"
           )
         )
       );
@@ -17995,7 +17981,7 @@ var Login = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Login;
-},{"react":7}],11:[function(require,module,exports) {
+},{"react":11}],7:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18033,11 +18019,18 @@ var Header = function (_React$Component) {
   _createClass(Header, [{
     key: 'render',
     value: function render() {
+      var _props = this.props,
+          loggedIn = _props.loggedIn,
+          login = _props.login,
+          logout = _props.logout,
+          name = _props.name,
+          avatar = _props.avatar;
+
       return _react2.default.createElement(
         'div',
         { className: 'header', __source: {
             fileName: _jsxFileName,
-            lineNumber: 7
+            lineNumber: 8
           },
           __self: this
         },
@@ -18045,15 +18038,21 @@ var Header = function (_React$Component) {
           'h1',
           { className: 'header__heading', __source: {
               fileName: _jsxFileName,
-              lineNumber: 8
+              lineNumber: 9
             },
             __self: this
           },
           'Topics manager'
         ),
-        _react2.default.createElement(_Login2.default, { loggedIn: this.props.loggedIn, login: this.props.login, logout: this.props.logout, __source: {
+        _react2.default.createElement(_Login2.default, {
+          loggedIn: loggedIn,
+          login: login,
+          logout: logout,
+          name: name,
+          avatar: avatar,
+          __source: {
             fileName: _jsxFileName,
-            lineNumber: 9
+            lineNumber: 10
           },
           __self: this
         })
@@ -18065,7 +18064,7 @@ var Header = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Header;
-},{"react":7,"./Login":20}],19:[function(require,module,exports) {
+},{"react":11,"./Login":17}],18:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18099,11 +18098,32 @@ var Card = function (_React$Component) {
   _createClass(Card, [{
     key: "render",
     value: function render() {
+      var _this2 = this;
+
+      var _props = this.props,
+          title = _props.title,
+          addedBy = _props.addedBy,
+          trainers = _props.trainers,
+          votes = _props.votes;
+
+      var namesList = trainers.map(function (e, i) {
+        return _react2.default.createElement(
+          "li",
+          { key: i, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 6
+            },
+            __self: _this2
+          },
+          e
+        );
+      });
+
       return _react2.default.createElement(
         "div",
         { className: "card", __source: {
             fileName: _jsxFileName,
-            lineNumber: 6
+            lineNumber: 9
           },
           __self: this
         },
@@ -18111,37 +18131,48 @@ var Card = function (_React$Component) {
           "h2",
           { className: "card__topic", __source: {
               fileName: _jsxFileName,
-              lineNumber: 7
+              lineNumber: 10
             },
             __self: this
           },
-          "topic"
+          title
         ),
         _react2.default.createElement(
           "div",
           { className: "card__list", __source: {
               fileName: _jsxFileName,
-              lineNumber: 8
-            },
-            __self: this
-          },
-          "names list"
-        ),
-        _react2.default.createElement(
-          "button",
-          { className: "card__button--like", __source: {
-              fileName: _jsxFileName,
               lineNumber: 11
             },
             __self: this
           },
-          "\uD83D\uDC9C"
+          _react2.default.createElement(
+            "ul",
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 12
+              },
+              __self: this
+            },
+            namesList
+          )
         ),
         _react2.default.createElement(
           "button",
-          { className: "card__button--like", __source: {
+          { className: "card__button", __source: {
               fileName: _jsxFileName,
-              lineNumber: 12
+              lineNumber: 16
+            },
+            __self: this
+          },
+          "\uD83D\uDC9C ",
+          votes
+        ),
+        _react2.default.createElement(
+          "button",
+          { className: "card__button", __source: {
+              fileName: _jsxFileName,
+              lineNumber: 17
             },
             __self: this
           },
@@ -18155,12 +18186,15 @@ var Card = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Card;
-},{"react":7}],12:[function(require,module,exports) {
+},{"react":11}],8:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var _jsxFileName = '/Users/majakarpinska/Desktop/my_projects/warsawjs-workshop-18-topics-manager/src/components/CardsList.js';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -18193,21 +18227,31 @@ var CardsList = function (_React$Component) {
   _createClass(CardsList, [{
     key: 'render',
     value: function render() {
+      var _this2 = this;
+
+      var workshops = this.props.workshops;
+      console.log(workshops);
+
+      var cards = workshops.map(function (e, i) {
+        return _react2.default.createElement(_Card2.default, _extends({}, e, {
+          key: e.title,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 13
+          },
+          __self: _this2
+        }));
+      });
+
       return _react2.default.createElement(
         'div',
         { className: 'cards-list', __source: {
             fileName: _jsxFileName,
-            lineNumber: 7
+            lineNumber: 21
           },
           __self: this
         },
-        _react2.default.createElement(_Card2.default, {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 8
-          },
-          __self: this
-        })
+        cards
       );
     }
   }]);
@@ -18216,7 +18260,7 @@ var CardsList = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = CardsList;
-},{"react":7,"./Card":19}],13:[function(require,module,exports) {
+},{"react":11,"./Card":18}],9:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18283,7 +18327,7 @@ var AddTopic = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = AddTopic;
-},{"react":7}],44:[function(require,module,exports) {
+},{"react":11}],21:[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {};
@@ -18470,7 +18514,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],43:[function(require,module,exports) {
+},{}],20:[function(require,module,exports) {
 var process = require("process");
 /*! hellojs v1.16.1 | (c) 2012-2017 Andrew Dodson | MIT https://adodson.com/hello.js/LICENSE */
 // ES5 Object.create
@@ -24409,13 +24453,13 @@ if (typeof module === 'object' && module.exports) {
 	module.exports = hello;
 }
 
-},{"process":44}],42:[function(require,module,exports) {
+},{"process":21}],5:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.logout = exports.login = undefined;
+exports.getUserData = exports.logout = exports.login = undefined;
 
 var _hellojs = require('hellojs');
 
@@ -24432,7 +24476,6 @@ var github = (0, _hellojs2.default)('github');
 var login = exports.login = function login() {
   return github.login().then(function () {
     return github.api('/me').then(function (data) {
-      console.log(data);
       return data;
     }, function (err) {
       return console.log(err);
@@ -24447,7 +24490,52 @@ var logout = exports.logout = function logout() {
     return console.log(err);
   });
 };
-},{"hellojs":43}],21:[function(require,module,exports) {
+
+var online = function online(session) {
+  var currentTime = new Date().getTime() / 1000;
+  return session && session.access_token && session.expires > currentTime;
+};
+
+var getUserData = exports.getUserData = function getUserData() {
+  var session = github.getAuthResponse();
+  if (online(session)) {
+    var accessToken = JSON.parse(localStorage.getItem('hello')).github.access_token;
+    return fetch('https://api.github.com/user?access_token=' + accessToken).then(function (resp) {
+      if (resp.status !== 200) {
+        return;
+      }
+      return resp.json().then(function (data) {
+        return data;
+      });
+    }).catch(function (err) {
+      return console.log(err);
+    });
+  }
+  return;
+};
+},{"hellojs":20}],4:[function(require,module,exports) {
+module.exports = [
+  {
+    "title": "ReactJS",
+    "added-by": "Kamil Dzeniszewski",
+    "trainers": ["Tati Platonova", "Piotr Zientara"],
+    "votes": 10
+  },
+  {
+    "title": "RxJS",
+    "added-by": "Piotr Kowalski",
+    "trainers": ["Piotr Kowalski"],
+    "votes": 5
+  },
+  {
+    "title": "Node.js",
+    "added-by": "Robert Kawecki",
+    "trainers": ["Robert Kawecki", "Tomasz Budrewicz", "Piotr Kowalski"],
+    "votes": 40
+  }
+]
+;
+},{}],19:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -24477,7 +24565,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],18:[function(require,module,exports) {
+},{}],12:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -24508,13 +24596,13 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":21}],10:[function(require,module,exports) {
+},{"./bundle-url":19}],6:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":18}],4:[function(require,module,exports) {
+},{"_css_loader":12}],3:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -24541,6 +24629,10 @@ var _AddTopic = require('./AddTopic');
 var _AddTopic2 = _interopRequireDefault(_AddTopic);
 
 var _service = require('./service.js');
+
+var _workshop = require('../../data/workshop.json');
+
+var _workshop2 = _interopRequireDefault(_workshop);
 
 require('../styles/main.css');
 
@@ -24569,42 +24661,81 @@ var App = function (_React$Component) {
     return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = App.__proto__ || Object.getPrototypeOf(App)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
       loggedIn: false,
       avatar: null,
-      name: null
+      name: null,
+      workshops: _workshop2.default
     }, _this.handleLogin = function () {
-      (0, _service.login)().then(function (data) {});
+      (0, _service.login)().then(function (data) {
+        _this.setState({
+          loggedIn: true,
+          avatar: data.avatar_url,
+          name: data.login
+        });
+      });
     }, _this.handleLogout = function () {
       (0, _service.logout)();
+      _this.setState({
+        loggedIn: false
+      });
     }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   _createClass(App, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      try {
+        (0, _service.getUserData)().then(function (data) {
+          _this2.setState({
+            loggedIn: !!data,
+            avatar: data.avatar_url,
+            name: data.login
+          });
+        });
+      } catch (err) {
+        console.log(err);
+      }
+    }
+  }, {
     key: 'render',
     value: function render() {
+      var _state = this.state,
+          loggedIn = _state.loggedIn,
+          avatar = _state.avatar,
+          name = _state.name,
+          workshops = _state.workshops;
+
+
       return _react2.default.createElement(
         'div',
         { className: 'wrapper', __source: {
             fileName: _jsxFileName,
-            lineNumber: 29
+            lineNumber: 54
           },
           __self: this
         },
-        _react2.default.createElement(_Header2.default, { loggedIn: this.state.loggedIn, login: this.handleLogin, logout: this.handleLogout, __source: {
+        _react2.default.createElement(_Header2.default, {
+          loggedIn: loggedIn,
+          login: this.handleLogin,
+          logout: this.handleLogout,
+          name: name,
+          avatar: avatar,
+          __source: {
             fileName: _jsxFileName,
-            lineNumber: 30
+            lineNumber: 55
           },
           __self: this
         }),
         _react2.default.createElement(_AddTopic2.default, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 31
+            lineNumber: 62
           },
           __self: this
         }),
-        _react2.default.createElement(_CardsList2.default, {
-          __source: {
+        _react2.default.createElement(_CardsList2.default, { workshops: workshops, __source: {
             fileName: _jsxFileName,
-            lineNumber: 32
+            lineNumber: 63
           },
           __self: this
         })
@@ -24616,7 +24747,7 @@ var App = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = App;
-},{"react":7,"./Header":11,"./CardsList":12,"./AddTopic":13,"./service.js":42,"../styles/main.css":10}],2:[function(require,module,exports) {
+},{"react":11,"./Header":7,"./CardsList":8,"./AddTopic":9,"./service.js":5,"../../data/workshop.json":4,"../styles/main.css":6}],2:[function(require,module,exports) {
 'use strict';
 
 var _jsxFileName = '/Users/majakarpinska/Desktop/my_projects/warsawjs-workshop-18-topics-manager/index.js';
@@ -24642,7 +24773,7 @@ _reactDom2.default.render(_react2.default.createElement(_App2.default, {
   },
   __self: undefined
 }), document.querySelector('#app'));
-},{"react":7,"react-dom":6,"./src/components/App":4}],41:[function(require,module,exports) {
+},{"react":11,"react-dom":10,"./src/components/App":3}],41:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -24664,7 +24795,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '55366' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '58408' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 

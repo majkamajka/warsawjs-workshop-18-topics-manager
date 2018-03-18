@@ -31,5 +31,15 @@
   padding: 20px;
 }
 
+.avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+}
+
+.card__button {
+  margin-top: auto;
+}
+
 
 
